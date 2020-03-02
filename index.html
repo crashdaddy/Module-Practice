@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+    <div id="output"></div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    
+    <script type="text/javascript">
+        // Lodash first and last array elements
+              words = ['sky', 'wood', 'forest', 'falcon',
+                  'pear', 'ocean', 'universe'
+              ];
+      
+              let fel = _.first(words);
+              let lel = _.last(words);
+      
+              let htmlText = "Using the _.first and _.last commands in lodash:"
+              htmlText += `<br/>Entire Array: ` + JSON.stringify(words);
+              htmlText += `<br/>First element: ${fel}`;
+              htmlText += `<br/>Last element: ${lel}`;
+              document.getElementById("output").innerHTML = htmlText;
+          </script>
+</body>
+</html>
